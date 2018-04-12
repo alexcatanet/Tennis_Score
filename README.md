@@ -10,7 +10,11 @@ It is possible that a tie occurs at 40 points, we will call that: deuce. After t
 A set will only be won:
 
 a) The first player to have 6 games (with a difference of 2 or more);
+
 b) Else the first player to win 7 games. The app will automatically start counting in the new set.
 
 ![screenshot_1](https://user-images.githubusercontent.com/33226462/38703732-f57fe59a-3e9b-11e8-982b-7035b4ddf0da.png)
 ![screenshot_2](https://user-images.githubusercontent.com/33226462/38703828-3edbc704-3e9c-11e8-97aa-209634bf17db.png)
+![tennis](https://user-images.githubusercontent.com/33226462/38704135-4bdc78e4-3e9d-11e8-8153-8a26e30330b5.gif)
+
+
