@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tennis Score</string>
+    <string name="tennis_court_image">tennis_court_image</string>
+    <string name="player_one">player 1</string>
+    <string name="score_player_one_value">0</string>
+    <string name="point">Point+</string>
+    <string name="player_two">player 2</string>
+    <string name="score_value_player_two">0</string>
+    <string name="score_sets">score sets:</string>
+    <string name="player_one_set_value">0</string>
+    <string name="player_two_set_value">0</string>
+    <string name="reset">reset</string>
+    <string name="fault_track">double fault</string>
+    <string name="fault">fault</string>
+    <string name="out">out</string>
+
+
+</resources>

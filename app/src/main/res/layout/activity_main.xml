@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tennisscore.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/art"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/first_children"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:id="@+id/player_one_text"
+                    style="@style/TitleTextStyle"
+                    android:text="@string/player_one"
+                    android:textColor="@color/textHeaderColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/player_one_score"
+                    style="@style/scoreHeader"
+                    android:text="@string/score_player_one_value"
+                    android:textColor="@color/textHeaderColor" />
+
+                <Button
+                    android:id="@+id/player_one_score_button"
+                    style="@style/buttonHeaderStyle"
+                    android:background="@drawable/button"
+                    android:onClick="addScoreForPlayerOne"
+                    android:text="@string/point" />
+
+                <Button
+                    android:id="@+id/player_one_fault"
+                    style="@style/faultButton"
+                    android:background="@drawable/fault_button"
+                    android:onClick="addOneFaultToPlayerOne"
+                    android:text="@string/fault" />
+
+                <Button
+                    android:id="@+id/player_one_double_fault"
+                    style="@style/faultButton"
+                    android:background="@drawable/double_fault_button"
+                    android:text="@string/fault_track" />
+
+                <Button
+                    android:id="@+id/player_one_out_button"
+                    style="@style/faultButton"
+                    android:background="@drawable/out_button"
+                    android:text="@string/out" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:id="@+id/player_two_text"
+                    style="@style/TitleTextStyle"
+                    android:text="@string/player_two"
+                    android:textColor="@color/textHeaderColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/player_two_score"
+                    style="@style/scoreHeader"
+                    android:text="@string/score_value_player_two"
+                    android:textColor="@color/textHeaderColor" />
+
+                <Button
+                    android:id="@+id/player_two_score_button"
+                    style="@style/buttonHeaderStyle"
+                    android:background="@drawable/button"
+                    android:onClick="addScoreForPlayerTwo"
+                    android:text="@string/point" />
+
+                <Button
+                    android:id="@+id/player_two_fault"
+                    style="@style/faultButton"
+                    android:background="@drawable/fault_button"
+                    android:onClick="addOneFaultToPlayerTwo"
+                    android:text="@string/fault" />
+
+                <Button
+                    android:id="@+id/player_two_double_fault"
+                    style="@style/faultButton"
+                    android:background="@drawable/double_fault_button"
+                    android:text="@string/fault_track" />
+
+                <Button
+                    android:id="@+id/player_two_out_button"
+                    style="@style/faultButton"
+                    android:background="@drawable/out_button"
+                    android:text="@string/out" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/player_set_score"
+                style="@style/scoreSets"
+                android:text="@string/score_sets"
+                android:textColor="@color/textHeaderColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/player_one_set_score"
+                        style="@style/playerSetScore"
+                        android:text="@string/player_one"
+                        android:textColor="@color/textHeaderColor" />
+
+                    <TextView
+                        android:id="@+id/player_one_score_set_1"
+                        style="@style/scoreSetsStyle"
+                        android:text="@string/player_one_set_value"
+                        android:textColor="@color/textHeaderColor" />
+
+                    <TextView
+                        android:id="@+id/player_one_score_set_2"
+                        style="@style/scoreSetsStyle"
+                        android:text="@string/player_one_set_value"
+                        android:textColor="@color/textHeaderColor" />
+
+                    <TextView
+                        android:id="@+id/player_one_score_set_3"
+                        style="@style/scoreSetsStyle"
+                        android:text="@string/player_one_set_value"
+                        android:textColor="@color/textHeaderColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/player_two_set_score"
+                        style="@style/playerSetScore"
+                        android:text="@string/player_two"
+                        android:textColor="@color/textHeaderColor" />
+
+                    <TextView
+                        android:id="@+id/player_two_score_set_1"
+                        style="@style/scoreSetsStyle"
+                        android:text="@string/player_two_set_value"
+                        android:textColor="@color/textHeaderColor" />
+
+                    <TextView
+                        android:id="@+id/player_two_score_set_2"
+                        style="@style/scoreSetsStyle"
+                        android:text="@string/player_two_set_value"
+                        android:textColor="@color/textHeaderColor" />
+
+                    <TextView
+                        android:id="@+id/player_two_score_set_3"
+                        style="@style/scoreSetsStyle"
+                        android:text="@string/player_two_set_value"
+                        android:textColor="@color/textHeaderColor" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/tennis_court_image"
+            android:src="@drawable/tennis" />
+
+        <Button
+            android:id="@+id/reset_button"
+            style="@style/bottomButton"
+            android:background="@drawable/button2"
+            android:onClick="resetScore"
+            android:text="@string/reset" />
+
+    </LinearLayout>
+</ScrollView>
