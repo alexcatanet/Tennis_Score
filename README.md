@@ -1,4 +1,4 @@
-Tennis_Score App
+## Tennis_Score App
 
 Here you can find my project from lesson 9 (Google Developer Challenge Scholarship).
 I have tried to combine and practice everything I learned in this section of the course. I make an app that allows a user to keep track of points within a game.
