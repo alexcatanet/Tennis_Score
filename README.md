@@ -9,6 +9,7 @@ The app also gives the possibility to obtain a tie - when both players achieve 4
 After that, you can obtain one of the following situations: adv - 40 or 40 - adv.
 
 A set will only be won if:
+
 a) The first player wins 6 games (with a difference of score of 2 points or more);
 
 b) The first player wins 7 games. The app will automatically start counting the new set.
